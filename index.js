@@ -1,6 +1,5 @@
 let axios = require('axios');
 let cheerio = require('cheerio');
-let fs = require('fs')
 
 
 axios.get('https://www.freetutorialsus.com/request-course/')
