@@ -48,20 +48,30 @@ axios.get('https://www.freetutorialsus.com/request-course/')
                         fieldCourseLink : $("input").find(inputId[4]).attr('value'),
                     };
                 
-                    // $("input").find(inputId[0]).attr('value')= fName;
+                    // $("input").find(inputId[0]).attr('value')= fName
                     // $("input").find(inputId[1]).attr('value') = lName;
                     // $("input").find(inputId[2]).attr('value') = rEmail;
                     // $("input").find(inputId[3]).attr('value') = courseName;
                     // $("input").find(inputId[4]).attr('value') = courseLink;
                     //Make the post request
-                    axios.post('https://www.freetutorialsus.com/request-course/',{
-                        [$("input").find(inputId[0]).attr('value')]: fName,
-                        [$("input").find(inputId[1]).attr('value')] : lName,
-                        [$("input").find(inputId[2]).attr('value')] : rEmail,
-                        [$("input").find(inputId[3]).attr('value')]: courseName,
-                        [$("input").find(inputId[4]).attr('value')]: courseLink
 
-                    }).then(response =>{console.log(response.statusText)}, error =>{console.log(error)})
+                    // axios.post('https://www.freetutorialsus.com/request-course/',{
+                    //     [$("input").find(inputId[0]).attr('value')]: fName,
+                    //     [$("input").find(inputId[1]).attr('value')] : lName,
+                    //     [$("input").find(inputId[2]).attr('value')] : rEmail,
+                    //     [$("input").find(inputId[3]).attr('value')]: courseName,
+                    //     [$("input").find(inputId[4]).attr('value')]: courseLink
+
+                    // }).then(response =>{console.log(response.statusText)}, error =>{console.log(error)})
+
+                    axios.post('https://www.freetutorialsus.com/request-course/',{
+                        [$("input").find(inputId[0]).attr('name')]: fName,
+                        [$("input").find(inputId[1]).attr('name')] : lName,
+                        [$("input").find(inputId[2]).attr('name')] : rEmail,
+                        [$("input").find(inputId[3]).attr('name')]: courseName,
+                        [$("input").find(inputId[4]).attr('name')]: courseLink
+
+                    }).then(response =>{console.log(response.status)}, error =>{console.log(error)})
                 }
                  
             }
