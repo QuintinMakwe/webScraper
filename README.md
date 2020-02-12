@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # webScraper
 This is a web scraper / automation script to submit data to an endpoint on freetutorialsus.com
 
@@ -15,3 +16,6 @@ This helped me understand how to grab tags, their values and a load of other att
 https://cheerio.js.org/.
 
 P.s: This was written purely out of curiosity. I don't intend using it for any malicious use.
+=======
+# webScraper
+>>>>>>> 5c5f8f9d37ee07a244ae5533f81dbf53e2f744a1
